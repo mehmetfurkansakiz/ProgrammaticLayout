@@ -22,6 +22,7 @@
 		0F78382A2BB4311B0039DEE3 /* RickyMortyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7838292BB4311B0039DEE3 /* RickyMortyViewController.swift */; };
 		0F78382D2BB431380039DEE3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0F78382C2BB431380039DEE3 /* SnapKit */; };
 		0F78382F2BB431380039DEE3 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 0F78382E2BB431380039DEE3 /* SnapKit-Dynamic */; };
+		0FB1C0CC2BC0D0D200F7AE58 /* RickyMortyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB1C0CB2BC0D0D200F7AE58 /* RickyMortyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		0F78381A2BB38E750039DEE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F78381C2BB38E760039DEE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F7838292BB4311B0039DEE3 /* RickyMortyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickyMortyViewController.swift; sourceTree = "<group>"; };
+		0FB1C0CB2BC0D0D200F7AE58 /* RickyMortyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickyMortyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		0F7838252BB38ECD0039DEE3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0FB1C0CA2BC0D06600F7AE58 /* Cell */,
 				0F7838292BB4311B0039DEE3 /* RickyMortyViewController.swift */,
 			);
 			path = View;
@@ -143,6 +146,14 @@
 				0F28FBDC2BBA33F600E9AC74 /* RickyMortyService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		0FB1C0CA2BC0D06600F7AE58 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0FB1C0CB2BC0D0D200F7AE58 /* RickyMortyTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FB1C0CC2BC0D0D200F7AE58 /* RickyMortyTableViewCell.swift in Sources */,
 				0F1A6F7E2BBD9EA000A4B95E /* RickyMortyViewModel.swift in Sources */,
 				0F28FBE02BBA342000E9AC74 /* RickyMortyModel.swift in Sources */,
 				0F7838132BB38E730039DEE3 /* ViewController.swift in Sources */,

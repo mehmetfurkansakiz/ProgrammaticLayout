@@ -36,6 +36,7 @@ final class RickyMortyViewController: UIViewController {
     private func drawDesign() {
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.register(RickyMortyTableViewCell.self, forCellReuseIdentifier: RickyMortyTableViewCell.Identifier.custom.rawValue)
         DispatchQueue.main.async {
             self.view.backgroundColor = .white
             self.labelTitle.font = .boldSystemFont(ofSize: 25)
@@ -66,9 +67,10 @@ extension RickyMortyViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = results[indexPath.row].name ?? "null"
-        
+        guard let cell: RickyMortyTableViewCell = tableView.dequeueReusableCell(withIdentifier: RickyMortyTableViewCell.Identifier.custom.rawValue) as? RickyMortyTableViewCell else {
+            return UITableViewCell()
+        }
+        cell.saveModel(model: results[indexPath.row])
         return cell
     }
     
