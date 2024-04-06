@@ -1,9 +1,3 @@
-//
-//  SceneDelegate.swift
-//  ProgrammaticLayout
-//
-//  Created by furkan sakız on 27.03.2024.
-//
 
 import UIKit
 
@@ -16,6 +10,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+#if DEBUG
+        Bundle(path: "/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle")?.load()
+        //tvOS için:
+        Bundle(path: "/Applications/InjectionIII.app/Contents/Resources/tvOSInjection.bundle")?.load()
+        //Ya da macOS için:
+        Bundle(path: "/Applications/InjectionIII.app/Contents/Resources/macOSInjection.bundle")?.load()
+#endif
+        
+        let rickyMortyVC = RickyMortyViewController(nibName: nil, bundle: nil)
+        window?.rootViewController = rickyMortyVC
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 

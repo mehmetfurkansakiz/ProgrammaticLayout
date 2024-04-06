@@ -1,9 +1,3 @@
-//
-//  AppDelegate.swift
-//  ProgrammaticLayout
-//
-//  Created by furkan sakız on 27.03.2024.
-//
 
 import UIKit
 
