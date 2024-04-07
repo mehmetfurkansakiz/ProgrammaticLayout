@@ -103,11 +103,3 @@ extension RickyMortyViewController {
         }
     }
 }
-
-#if DEBUG
-extension RickyMortyViewController {
-    @objc func injected() {
-        viewDidLoad()
-    }
-}
-#endif
