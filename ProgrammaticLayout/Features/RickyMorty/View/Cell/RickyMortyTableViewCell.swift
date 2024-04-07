@@ -35,23 +35,25 @@ class RickyMortyTableViewCell: UITableViewCell {
         addSubview(customTitle)
         addSubview(customDescpription)
         customTitle.font = .boldSystemFont(ofSize: 18)
-        customDescpription.font = .italicSystemFont(ofSize: 10)
+        customDescpription.font = .italicSystemFont(ofSize: 14)
         
         customImage.snp.makeConstraints { make in
-            make.height.equalTo(100)
+            make.height.equalTo(UIScreen.main.bounds.width * 0.4)
+            make.top.equalTo(contentView)
             make.right.left.equalToSuperview()
         }
         
         customTitle.snp.makeConstraints { make in
-            make.top.equalTo(customImage.snp.bottom).offset(10)
-            make.right.left.equalTo(customImage)
-            make.width.height.equalTo(20)
+            make.top.equalTo(customImage.snp.bottom)
+            make.right.left.equalTo(contentView)
+            make.height.equalTo(contentView.frame.width * 0.1)
         }
         
         customDescpription.snp.makeConstraints { make in
-            make.top.equalTo(customTitle.snp.bottom).offset(5)
+            make.top.equalTo(customTitle.snp.bottom)
             make.right.left.equalTo(customTitle)
             make.bottom.equalToSuperview()
+            make.height.equalTo(contentView.frame.width * 0.08)
         }
     }
     

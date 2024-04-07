@@ -37,6 +37,8 @@ final class RickyMortyViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(RickyMortyTableViewCell.self, forCellReuseIdentifier: RickyMortyTableViewCell.Identifier.custom.rawValue)
+        
+        tableView.rowHeight = self.view.frame.size.height * 0.3
         DispatchQueue.main.async {
             self.view.backgroundColor = .white
             self.labelTitle.font = .boldSystemFont(ofSize: 25)
