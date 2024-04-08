@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F1A6F7E2BBD9EA000A4B95E /* RickyMortyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1A6F7D2BBD9EA000A4B95E /* RickyMortyViewModel.swift */; };
+		0F1F6A272BC371F1004B22A6 /* RickyMortyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1F6A262BC371F1004B22A6 /* RickyMortyDetailViewController.swift */; };
 		0F28FBDD2BBA33F600E9AC74 /* RickyMortyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28FBDC2BBA33F600E9AC74 /* RickyMortyService.swift */; };
 		0F28FBE02BBA342000E9AC74 /* RickyMortyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28FBDF2BBA342000E9AC74 /* RickyMortyModel.swift */; };
 		0F28FBE32BBA3AC100E9AC74 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0F28FBE22BBA3AC100E9AC74 /* Alamofire */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		0F1A6F7D2BBD9EA000A4B95E /* RickyMortyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickyMortyViewModel.swift; sourceTree = "<group>"; };
+		0F1F6A262BC371F1004B22A6 /* RickyMortyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickyMortyDetailViewController.swift; sourceTree = "<group>"; };
 		0F28FBDC2BBA33F600E9AC74 /* RickyMortyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickyMortyService.swift; sourceTree = "<group>"; };
 		0F28FBDF2BBA342000E9AC74 /* RickyMortyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickyMortyModel.swift; sourceTree = "<group>"; };
 		0F78380B2BB38E720039DEE3 /* ProgrammaticLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgrammaticLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +124,7 @@
 			children = (
 				0FB1C0CA2BC0D06600F7AE58 /* Cell */,
 				0F7838292BB4311B0039DEE3 /* RickyMortyViewController.swift */,
+				0F1F6A262BC371F1004B22A6 /* RickyMortyDetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				0F28FBE02BBA342000E9AC74 /* RickyMortyModel.swift in Sources */,
 				0F7838132BB38E730039DEE3 /* ViewController.swift in Sources */,
 				0F78382A2BB4311B0039DEE3 /* RickyMortyViewController.swift in Sources */,
+				0F1F6A272BC371F1004B22A6 /* RickyMortyDetailViewController.swift in Sources */,
 				0F78380F2BB38E720039DEE3 /* AppDelegate.swift in Sources */,
 				0F7838112BB38E730039DEE3 /* SceneDelegate.swift in Sources */,
 				0F28FBDD2BBA33F600E9AC74 /* RickyMortyService.swift in Sources */,
