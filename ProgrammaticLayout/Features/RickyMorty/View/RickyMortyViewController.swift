@@ -76,6 +76,12 @@ extension RickyMortyViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let rickyMortyDetailVC = RickyMortyDetailViewController()
+        rickyMortyDetailVC.character = results[indexPath.row]
+        navigationController?.pushViewController(rickyMortyDetailVC, animated: true)
+    }
+    
     
 }
 
