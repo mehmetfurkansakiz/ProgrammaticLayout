@@ -43,6 +43,11 @@ class RickyMortyTableViewCell: UITableViewCell {
         customImage.layer.shadowRadius = 4
         customImage.layer.masksToBounds = false
         
+        customImage.layer.borderWidth = 1.0
+        customImage.layer.borderColor = UIColor.gray.cgColor
+        customImage.layer.cornerRadius = 15.0
+        customImage.clipsToBounds = true
+        
         customImage.snp.makeConstraints { make in
             make.height.equalTo(UIScreen.main.bounds.width * 0.4)
             make.top.equalTo(contentView)

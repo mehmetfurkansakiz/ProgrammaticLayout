@@ -50,6 +50,11 @@ class RickyMortyDetailViewController: UIViewController {
             self.imageCharacter.layer.shadowOffset = CGSize(width: 0, height: 4)
             self.imageCharacter.layer.shadowRadius = 4
             self.imageCharacter.layer.masksToBounds = false
+            
+            self.imageCharacter.layer.borderWidth = 1.0
+            self.imageCharacter.layer.borderColor = UIColor.gray.cgColor
+            self.imageCharacter.layer.cornerRadius = 15.0
+            self.imageCharacter.clipsToBounds = true
         }
     }
     
@@ -82,7 +87,8 @@ extension RickyMortyDetailViewController {
         imageCharacter.snp.makeConstraints { make in
             make.top.equalTo(labelName.snp.bottom).offset(16)
             make.centerX.equalToSuperview()
-            make.leading.trailing.equalToSuperview()
+            make.leading.equalToSuperview().offset(16)
+            make.trailing.equalToSuperview().offset(-16)
             make.height.greaterThanOrEqualTo(imageCharacter.snp.width)
         }
     }
@@ -123,8 +129,8 @@ extension RickyMortyDetailViewController {
             
             label.snp.makeConstraints { make in
                 make.top.equalTo(topAnchor).offset(8)
-                make.left.equalToSuperview().offset(16)
-                make.right.equalToSuperview().offset(-16)
+                make.left.equalToSuperview().offset(32)
+                make.right.equalToSuperview().offset(-32)
             }
             
             topAnchor = label.snp.bottom
