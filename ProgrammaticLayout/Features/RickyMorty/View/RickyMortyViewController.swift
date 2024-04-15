@@ -73,6 +73,7 @@ extension RickyMortyViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         cell.saveModel(model: results[indexPath.row])
+        cell.selectionStyle = .none
         return cell
     }
     

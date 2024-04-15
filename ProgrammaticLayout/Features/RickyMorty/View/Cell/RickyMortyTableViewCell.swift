@@ -37,6 +37,12 @@ class RickyMortyTableViewCell: UITableViewCell {
         customTitle.font = .boldSystemFont(ofSize: 18)
         customDescpription.font = .italicSystemFont(ofSize: 14)
         
+        customImage.layer.shadowColor = UIColor.black.cgColor
+        customImage.layer.shadowOpacity = 0.1
+        customImage.layer.shadowOffset = CGSize(width: 0, height: 4)
+        customImage.layer.shadowRadius = 4
+        customImage.layer.masksToBounds = false
+        
         customImage.snp.makeConstraints { make in
             make.height.equalTo(UIScreen.main.bounds.width * 0.4)
             make.top.equalTo(contentView)

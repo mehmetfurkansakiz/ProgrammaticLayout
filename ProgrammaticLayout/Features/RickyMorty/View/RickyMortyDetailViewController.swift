@@ -44,6 +44,12 @@ class RickyMortyDetailViewController: UIViewController {
             self.labelName.text = self.character?.name
             self.labelName.textColor = .black
             self.labelName.font = .boldSystemFont(ofSize: 24)
+            
+            self.imageCharacter.layer.shadowColor = UIColor.black.cgColor
+            self.imageCharacter.layer.shadowOpacity = 0.1
+            self.imageCharacter.layer.shadowOffset = CGSize(width: 0, height: 4)
+            self.imageCharacter.layer.shadowRadius = 4
+            self.imageCharacter.layer.masksToBounds = false
         }
     }
     
