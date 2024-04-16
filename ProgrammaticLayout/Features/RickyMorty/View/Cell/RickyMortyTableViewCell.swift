@@ -49,22 +49,23 @@ class RickyMortyTableViewCell: UITableViewCell {
         customImage.clipsToBounds = true
         
         customImage.snp.makeConstraints { make in
-            make.height.equalTo(UIScreen.main.bounds.width * 0.4)
+            make.height.equalTo(contentView.frame.height)
             make.top.equalTo(contentView)
             make.right.left.equalToSuperview()
         }
         
         customTitle.snp.makeConstraints { make in
             make.top.equalTo(customImage.snp.bottom)
-            make.right.left.equalTo(contentView)
-            make.height.equalTo(contentView.frame.width * 0.1)
+            make.right.equalTo(contentView)
+            make.left.equalTo(contentView).offset(8)
+            make.height.equalTo(contentView.frame.height * 0.6)
         }
         
         customDescpription.snp.makeConstraints { make in
             make.top.equalTo(customTitle.snp.bottom)
             make.right.left.equalTo(customTitle)
-            make.bottom.equalToSuperview()
-            make.height.equalTo(contentView.frame.width * 0.08)
+            make.bottom.equalToSuperview().offset(-8)
+            make.height.equalTo(contentView.frame.height * 0.5)
         }
     }
     
